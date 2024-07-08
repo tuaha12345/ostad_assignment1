@@ -1,0 +1,165 @@
+@import url('https://fonts.googleapis.com/css2?family=Playwrite+GB+S:ital,wght@0,100..400;1,100..400&display=swap');
+
+
+:root {
+    --font-family-primary: 'Playwrite GB S', cursive;
+    --font-family-secondary: Arial, sans-serif;
+
+    --background-color: rgba(66, 195, 247, 0.089);
+    --border-color: rgb(95, 231, 255);
+    --text-color-primary: rgba(115, 238, 238, 0.651);
+    --text-color-secondary: #EADBC8;
+    --text-color-tertiary: #B3C8CF;
+    --text-color-stats: #ffffffc9;
+    --btn-follow-border-color: rgb(95, 231, 255);
+    --btn-follow-bg-color: transparent;
+    --btn-follow-text-color: #A7E6FF;
+    --btn-hire-border-color: #BED7DC;
+    --btn-hire-bg-color: rgba(4, 205, 240, 0.308);
+    --btn-hire-text-color: #BED7DC;
+    --social-media-bg-color: rgba(0, 255, 255, 0.418);
+    --social-media-border-color: #A7E6FF;
+    --social-media-text-color: white;
+    --box-shadow-color: rgba(0, 0, 0, 0.1);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: url('https://i.pinimg.com/564x/f5/ab/3e/f5ab3e26d7acbfd5a6ac642979ed08f0.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: var(--font-family-secondary);
+}
+
+.profile-card {
+    margin: 60px 20px;
+    width: 90%;
+    max-width: 450px;
+    padding: 20px;
+    background-color: var(--background-color);
+    border-radius: 10px;
+    box-shadow: 0 4px 8px var(--box-shadow-color);
+    text-align: center;
+    border: 1px solid var(--border-color);
+    box-shadow: rgba(250, 249, 249, 0.24) 0px 3px 8px;
+}
+
+.profile-image {
+    width: 150px;
+    height: 150px;
+    border: 2px solid #6fc8eb93;
+    border-radius: 50%;
+    margin: 0 auto 20px;
+}
+
+.profile-name {
+    font-size: 1.5em;
+    color: var(--text-color-primary);
+    margin-bottom: 10px;
+    font-family: var(--font-family-primary);
+}
+
+.profile-occupation {
+    font-size: 1.2em;
+    color: var(--text-color-secondary);
+    margin-bottom: 20px;
+}
+
+.profile-description {
+    font-size: 1em;
+    color: var(--text-color-tertiary);
+    margin-bottom: 20px;
+}
+
+.profile-contact {
+    font-size: 0.9em;
+    color: var(--text-color-secondary);
+}
+
+.profile-stats {
+    display: flex;
+    justify-content: space-around;
+    margin: 20px 0;
+    color: var(--text-color-stats);
+}
+
+.profile-buttons {
+    display: flex;
+    justify-content: space-around;
+    margin: 30px 0;
+}
+
+.btn {
+    padding: 10px 20px;
+    font-weight: 800;
+    border-radius: 5px;
+}
+
+.btn-follow {
+    border: 1px solid var(--btn-follow-border-color);
+    background: var(--btn-follow-bg-color);
+    color: var(--btn-follow-text-color);
+}
+
+.btn-hire {
+    border: 1px solid var(--btn-hire-border-color);
+    background: var(--btn-hire-bg-color);
+    color: var(--btn-hire-text-color);
+}
+
+.social-media {
+    display: flex;
+    justify-content: space-around;
+    margin: 35px 0;
+}
+
+.social-media div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 50px;
+    background-color: var(--social-media-bg-color);
+    border-radius: 50%;
+    border: 1px solid var(--social-media-border-color);
+}
+
+.social-media a {
+    color: var(--social-media-text-color);
+    font-size: 24px;
+    text-decoration: none;
+}
+
+/* Media queries for responsiveness */
+@media (max-width: 600px) {
+    .profile-card {
+        width: 100%;
+        padding: 15px;
+    }
+
+    .profile-name, .profile-occupation, .profile-description, .profile-contact {
+        font-size: 1em;
+    }
+
+    .btn {
+        padding: 10px;
+    }
+
+    .social-media div {
+        width: 40px;
+        height: 40px;
+    }
+
+    .social-media a {
+        font-size: 20px;
+    }
+}
